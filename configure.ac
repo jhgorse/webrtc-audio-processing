@@ -49,7 +49,7 @@ AS_CASE(["${host}"],
          AS_IF([test "$HAVE_IOS" = "yes"],
              [OS_FLAGS="-DWEBRTC_MAC -DWEBRTC_IOS"],
              [OS_FLAGS="-DWEBRTC_MAC"])
-         PLATFORM_CFLAGS="-DWEBRTC_POSIX"
+         PLATFORM_CFLAGS="-DWEBRTC_POSIX -DWEBRTC_MAC -DWEBRTC_CLOCK_TYPE_REALTIME"
         ]
     # FIXME: Add Windows support
 )
